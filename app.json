@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "label-lingo-quiz",
+    "name": "ラベル英単語クイズ",
     "slug": "label-lingo-quiz",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,7 +13,8 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mrt168.labellingoquiz"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +22,20 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.mrt168.labellingoquiz"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "scheme": "labellingoquiz",
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": false
     }
   }
 }
